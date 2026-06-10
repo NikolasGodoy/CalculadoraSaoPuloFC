@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/Calculadora.png" type="image/x-icon" />
+    <title>Calculadora do Tri Mundial</title>
+  </head>
+  <body>
+    <!--Container principal da calculadora-->
+    <div class="calculadora">
+      <input type="text" id="tela" disabled />
+
+      <!--Área que contem todas as linhas de botões-->
+      <div class="botoes">
+
+        <!--Primeira linha de botões-->
+
+        <div class="linha-botoes">
+            <button onclick="limparTela()" class="botao-limpar">C</button>
+            <button onclick="adicionarValor('/')" class="operador">/</button>
+            <button onclick="adicionarValor('*')" class="operador">*</button>
+            <button onclick="apagarUltimo()"  class="delete">Del</button>
+        </div>
+
+        <!--Segunda linhas de botões-->
+
+        <div class="linha-botoes">
+            <button onclick="adicionarValor('7')">7</button>
+            <button onclick="adicionarValor('8')">8</button>
+            <button onclick="adicionarValor('9')">9</button>
+            <button onclick="adicionarValor('-')" class="operador">-</button>
+        </div>
+
+         <!--Terceira linhas de botões-->
+
+         <div class="linha-botoes">
+            <button onclick="adicionarValor('4')">4</button>
+            <button onclick="adicionarValor('5')">5</button>
+            <button onclick="adicionarValor('6')">6</button>
+            <button onclick="adicionarValor('+')" class="operador">+</button>
+        </div>
+
+         <!--Quarta linhas de botões-->
+
+         <div class="linha-botoes">
+            <button onclick="adicionarValor('1')">1</button>
+            <button onclick="adicionarValor('2')">2</button>
+            <button onclick="adicionarValor('3')">3</button>
+            <button onclick="calcularResultado()" class="botao-igual">=</button>
+        </div>
+
+         <!--Quinta linha linhas de botões-->
+         
+         <div class="linha-botoes">
+            <button onclick="adicionarValor('0')" class="botao-zero">0</button>
+            <button onclick="adicionarValor('.')">.</button>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
