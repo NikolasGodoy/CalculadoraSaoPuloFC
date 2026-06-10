@@ -45,7 +45,7 @@ document.addEventListener("keydown", function(evento){
         limparTela()
     }
 
-    if(tecla === "BackSpace"){
-        apagarUltimo
+    if(tecla === "Backspace"){
+        apagarUltimo();
     }
 })
